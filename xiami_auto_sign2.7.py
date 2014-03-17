@@ -1,8 +1,8 @@
-# -*- coding: cp936 -*-  
+# -*- coding: utf-8 -*-  
 ''''' 
 Created on 2012-11-15 
  
-@author:  
+@author:
 '''  
 import urllib, urllib2, cookielib, sys,base64
   
@@ -31,7 +31,7 @@ class LoginXiami:
         self.cookie.save(self.cookieFile)  
         result = str(result)
         #.decode('utf-8').encode('gbk')  
-        if 'Email »òÕßÃÜÂë´íÎó' in result:  
+        if 'Email æˆ–è€…å¯†ç é”™è¯¯' in result:  
             print('Login failed due to Email or Password error...') 
             sys.exit()  
         else :  
